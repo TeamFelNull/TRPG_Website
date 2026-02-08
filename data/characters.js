@@ -15,7 +15,7 @@ const characters = [
     publicFace: "研究所局長",
     belief: "我",
     artist: "アルフォルテ(@RAB1201)",
-    description: "ヴァナルガンド終極技術発展局の局長",
+    description: "ヴァナルガンド終極技術発展局の局長\n実験による犠牲を是とし、自己犠牲は嫌う正真正銘のクズ",
     abilities: [
       { name: "研究能力", description: "実験の為ならあらゆる犠牲を躊躇わず払い、予算と実験体さえいれば驚異的な成果を出す" },
       { name: "潔癖症", description: "他人の犠牲は厭わないが、自分の身を使うことは【美しい身体が穢れる】という理由で拒否する" },
