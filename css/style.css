@@ -651,7 +651,7 @@ button {
 }
 
 .character-quote::before {
-  content: ">> ";
+  content: "";
   opacity: 0.8;
 }
 
