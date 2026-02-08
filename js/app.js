@@ -16,13 +16,14 @@ class CharacterDatabase {
     // Navigation buttons
     document.getElementById('btnCharacters').addEventListener('click', () => this.showCharactersPage());
     document.getElementById('btnOrganizations').addEventListener('click', () => this.showOrganizationsPage());
-    document.getElementById('btnHeaderToggle').addEventListener('click', () => {
-        const header = document.getElementById('appHeader');
-        const btn = document.getElementById('btnHeaderToggle');
+    const header = document.getElementById('mainHeader');
+    const toggle = document.getElementById('headerToggle');
 
-        header.classList.toggle('collapsed');
-        btn.textContent = header.classList.contains('collapsed') ? '▼' : '▲';
+    toggle.addEventListener('click', () => {
+      header.classList.toggle('collapsed');
+      toggle.textContent = header.classList.contains('collapsed') ? '▲' : '▼';
     });
+
 
 
     
