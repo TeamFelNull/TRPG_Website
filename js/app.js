@@ -17,15 +17,15 @@ class CharacterDatabase {
     document.getElementById('btnCharacters').addEventListener('click', () => this.showCharactersPage());
     document.getElementById('btnOrganizations').addEventListener('click', () => this.showOrganizationsPage());
     document.getElementById('btnHeaderToggle').addEventListener('click', () => {
-        const header = document.getElementById('appHeader');
-        const btn = document.getElementById('btnHeaderToggle');
+      const header = document.getElementById('appHeader');
+      const btn = document.getElementById('btnHeaderToggle');
 
-        header.classList.toggle('collapsed');
-        btn.textContent = header.classList.contains('collapsed') ? '▼' : '▲';
+      header.classList.toggle('collapsed');
+      btn.textContent = header.classList.contains('collapsed') ? '▼' : '▲';
     });
 
 
-    
+
     // Search
     document.getElementById('searchInput').addEventListener('input', (e) => this.handleSearch(e));
 
@@ -114,8 +114,8 @@ class CharacterDatabase {
           ${char.quote ? `
             <div class="character-quote">
               ${Array.isArray(char.quote)
-                ? char.quote[Math.floor(Math.random() * char.quote.length)]
-                : char.quote}
+          ? char.quote[Math.floor(Math.random() * char.quote.length)]
+          : char.quote}
             </div>
           ` : ''}
         </div>
@@ -242,27 +242,45 @@ class CharacterDatabase {
     const modal = document.getElementById('modal');
     const modalBody = document.getElementById('modalBody');
     const modalContent = modal.querySelector('.modal-content');
-
+  
     modalContent.classList.add('org-modal');
-
+  
     const members = org.members.map(member => {
       const char = characters.find(c => c.id === member.characterId);
       return { ...member, character: char };
     });
-
+  
+    const quote = Array.isArray(org.quote)
+      ? org.quote[Math.floor(Math.random() * org.quote.length)]
+      : org.quote;
+  
     modalBody.innerHTML = `
       <div class="modal-header">
         <div class="modal-image">
           <img src="${org.logo}" alt="${org.name}">
         </div>
+  
         <div class="modal-info">
-          <h2>${org.name}</h2>
-          <span class="role">ORGANIZATION</span>
-          <p class="description">${org.description}</p>
+          <h2 class="character-name">
+            ${org.name}
+          </h2>
+  
+          <span class="role">${org.faction}</span>
+  
+          ${quote ? `
+            <div class="character-quote">
+              ${quote}
+            </div>
+          ` : ''}
         </div>
       </div>
-
+  
       <div class="modal-body">
+        <div class="section">
+          <div class="section-title">概要</div>
+          <p class="description">${org.description}</p>
+        </div>
+  
         <div class="section">
           <div class="section-title">構成員</div>
           <ul class="members-list">
@@ -279,7 +297,7 @@ class CharacterDatabase {
         </div>
       </div>
     `;
-
+  
     modal.classList.add('active');
   }
 }
