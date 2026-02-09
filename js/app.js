@@ -126,7 +126,15 @@ class CharacterDatabase {
               <div class="organization"
                    onclick="app.openOrganizationModal('${org.name}')">
                 <div class="org-name">${org.name}</div>
-                ${org.role ? `<div class="org-role">${org.role}</div>` : ''}
+            
+                ${org.role ? `
+                  <div class="org-tags">
+                    ${Array.isArray(org.role)
+                      ? org.role.map(r => `<span class="org-tag">${r}</span>`).join('')
+                      : `<span class="org-tag">${org.role}</span>`
+                    }
+                  </div>
+                ` : ''}
               </div>
             `).join('')}
           </div>

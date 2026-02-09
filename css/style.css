@@ -754,3 +754,21 @@ header.collapsed .header-title {
   color: var(--text-muted);
   margin-top: 0.2rem;
 }
+
+.org-tags {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.org-tag {
+  font-size: 0.65rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(255, 0, 110, 0.1);
+  box-shadow: 0 0 6px rgba(255, 0, 110, 0.4);
+}
