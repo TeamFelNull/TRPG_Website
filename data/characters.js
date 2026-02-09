@@ -91,6 +91,7 @@ const characters = [
     role: "鍔鑿組",
     organizations: [
       { name: "國立家", role: "次女" },
+      { name: "國立家", role: "次女" },
     ],
     quote: "「パパ！お姉ちゃん！！大好き！！！」",
     publicFace: "AI",
