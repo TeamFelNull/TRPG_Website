@@ -95,6 +95,6 @@ const characters = [
     weapons: [
       { name: "神機【模機】", description: "グリム・インダストリアル製の試作特殊生体模擬武装\n使い手と同様の妖魔の遺伝子をコアに組み込み、遺伝子適合率をある程度補強してくれる機能を持つ" },
     ],
-    imageUrl: "https://github.com/TeamFelNull/TRPG_Website/blob/main/images/hasuba/char03.png?raw=true"
+    imageUrl: "https://github.com/TeamFelNull/TRPG_Website/blob/main/images/hasuba/char04.png?raw=true"
   },
 ];
