@@ -739,7 +739,7 @@ header.collapsed .header-title {
   background: var(--card-bg);
   border-left: 4px solid var(--primary);
   padding: 0.8rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
