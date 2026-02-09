@@ -309,8 +309,9 @@ nav button.active {
 .modal-info .organization {
   background: var(--card-bg);
   border-left: 4px solid var(--primary);
-  padding: 1rem;
-  margin: 1rem 0;
+  padding: 0.45rem 0.6rem;
+  margin: 0 0 0.15rem 0;
+  line-height: 1.2;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -757,10 +758,10 @@ header.collapsed .header-title {
 }
 
 .org-tags {
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.2rem;
 }
 
 .org-tag {
