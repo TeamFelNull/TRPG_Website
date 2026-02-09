@@ -36,6 +36,14 @@ class CharacterDatabase {
     });
   }
 
+  openOrganizationModal(orgName) {
+    const org = organizations.find(o => o.name === orgName);
+    if (!org) return;
+
+    this.showOrganizationDetail(org);
+  }
+
+
   showCharactersPage() {
     this.currentPage = 'characters';
     document.getElementById('btnCharacters').classList.add('active');
@@ -107,7 +115,7 @@ class CharacterDatabase {
             ${char.nameEn ? `<div class="name-en">${char.nameEn}</div>` : ''}
           </h2>
           <span class="role">${char.role}</span>
-          <div class="organization" onclick="app.navigateToOrganization('${char.organization}')">
+          <div class="organization"onclick="app.openOrganizationModal('${char.organization}')">
             <div class="org-label">ORGANIZATION</div>
             <div class="org-name">${char.organization}</div>
           </div>
