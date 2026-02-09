@@ -14,7 +14,8 @@ const organizations = [
     ],
     members: [
       { characterId: "char01", name: "葦原 レイチェル", title: "所長" },
-      { characterId: "char02", name: "大狼 灰音", title: "主席研究員" }
+      { characterId: "char02", name: "大狼 灰音", title: "主席研究員" },
+      { characterId: "char03", name: "海鳴 姫", title: "第五成功例" },
     ]
   }
 ];
