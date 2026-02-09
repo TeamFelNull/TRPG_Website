@@ -302,7 +302,7 @@ nav button.active {
   color: var(--background);
   padding: 0.3rem 0.8rem;
   font-size: 0.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
   letter-spacing: 1px;
 }
 
@@ -733,6 +733,7 @@ header.collapsed .header-title {
 
 .organizations {
   margin: 1rem 0;
+  margin-top: 0.2rem;
 }
 
 .organization {
