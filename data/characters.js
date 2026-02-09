@@ -213,4 +213,30 @@ const characters = [
     ],
     imageUrl: "https://github.com/TeamFelNull/TRPG_Website/blob/main/images/hasuba/char08.png?raw=true"
   },
+  {
+    id: "char09",
+    name: "R・A・B",
+    nameEn: "Reiya・Al・Blitzer",
+    birthDate: "	12月01日",
+    age: "■■",
+    height: "160cm",
+    weight: "69kg",
+    bloodType: "O型",
+    role: "御釘衆",
+    organizations: [
+      { name: "所属なし", role: "" },
+    ],
+    quote: "「これが、師匠直伝の抜刀術だッ！」",
+    publicFace: "アークス/守護輝士",
+    belief: "和",
+    artist: "ふあそらさん(@ggggsor)",
+    description: "宇宙から落下してきたと思われるカプセルの様なものから発見された、武器マニアのメガネっ子ヒューマン\n怠け癖があり、武器以外の事には無頓着、記憶喪失らしいのだが特に気にしてはいない上、クラスはファントム...などと名乗っている\n一度死亡したが、元々失う記憶もなく、【獄】に監禁されることもなく黄泉還った\n元ネタはPSO2の自キャラ",
+    abilities: [
+      { name: "未来的な科学技術", description: "現代の技術とは思えない未来的な科学技術を扱い、居合を行う\nその眼は刹那を見切ると言われている" },
+    ],
+    weapons: [
+      { name: "ディナイアルワン", description: "特殊な機能を備えたアサルトライフル\n変形し、弓とすることも出来れば、ストックを引き抜くことで刀としても使用できる逸品" },
+    ],
+    imageUrl: "https://github.com/TeamFelNull/TRPG_Website/blob/main/images/hasuba/char09.png?raw=true"
+  },
 ];
