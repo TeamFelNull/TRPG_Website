@@ -121,9 +121,15 @@ class CharacterDatabase {
             ${char.nameEn ? `<div class="name-en">${char.nameEn}</div>` : ''}
           </h2>
           <span class="role">${char.role}</span>
-          <div class="organization" onclick="app.openOrganizationModal('${char.organization}')">
-            <div class="org-label">ORGANIZATION</div>
-            <div class="org-name">${char.organization}</div>
+          <div class="organizations">
+            <div class="org-label">ORGANIZATIONS</div>
+            ${char.organizations.map(org => `
+              <div class="organization"
+                   onclick="app.openOrganizationModal('${org.name}')">
+                <div class="org-name">${org.name}</div>
+                ${org.role ? `<div class="org-role">${org.role}</div>` : ''}
+              </div>
+            `).join('')}
           </div>
           ${char.quote ? `
             <div class="character-quote">
